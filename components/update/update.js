@@ -63,6 +63,6 @@ const ObjectId = mongodb.ObjectId;
         res.send(await getPersonagemById(id));
       });
     
-});
+})();
 
 module.exports = router;

@@ -34,6 +34,6 @@ const ObjectId = mongodb.ObjectId;
         };
         res.send(personagem);
       });
-});
+})();
 
 module.exports = router;
