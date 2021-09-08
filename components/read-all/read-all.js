@@ -23,7 +23,7 @@ const mongodb = require("mongodb");
   router.use(function (req, res, next) {
     next();
   });
-  router.get("/personagens", async (req, res) => {
+  router.get("/", async (req, res) => {
     res.json(await getPersonagensValidas());
   });
     

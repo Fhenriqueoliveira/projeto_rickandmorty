@@ -27,7 +27,7 @@ const ObjectId = mongodb.ObjectId;
 });
 
     //[PUT] Atualizar personagem
-    router.put("/personagens/:id", async (req, res) => {
+    router.put("/:id", async (req, res) => {
         const id = req.params.id;
         const objeto = req.body;
     

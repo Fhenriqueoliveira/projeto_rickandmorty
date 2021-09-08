@@ -27,7 +27,7 @@ const ObjectId = mongodb.ObjectId;
 });
 
 
-router.post("/personagens", async (req, res) => {
+router.post("/", async (req, res) => {
     const objeto = req.body;
 
     if (!objeto || !objeto.nome || !objeto.imagemUrl) {
