@@ -3,7 +3,7 @@ require("dotenv").config();
 require("express-async-errors");
 var cors = require("cors");
 
-//Criando as routers
+//Importando as routers
 const home = require("./components/home/home");
 const readAll = require("./components/read-all/read-all");
 const readById = require("./components/read-by-id/read-by-id");
@@ -27,7 +27,7 @@ app.use("/personagens/create", create);
 app.use("/personagens/update", update);
 app.use("/personagens/delete", del);
 
-//Tratamento de erros e valiacoes
+//Tratamento de erros e validacoes
 app.all("*", function (req, res) {
   res.status(404).send({ message: "Endpoint was not found" });
 });
